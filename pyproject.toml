@@ -13,8 +13,8 @@ dependencies = [
     "python-dotenv>=1.2.3",
 ]
 
-[project.scripts]
-voice-agent = "voice_agent:main"
+[tool.vercel]
+entrypoint = "agent.py"
 
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
